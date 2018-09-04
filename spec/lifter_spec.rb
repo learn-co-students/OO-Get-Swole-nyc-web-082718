@@ -50,7 +50,7 @@ describe "Lifter" do
     it "creates a new Membership and associates a lifter and gym" do
       sharon = Lifter.new("Sharon", 900)
       lifetime = Gym.new("Lifetime Fitness")
-      sharon.sign_up(200, lifetime)
+      sharon.sign_up(lifetime, 200)
 
       expect(sharon.gyms).to include(lifetime)
     end
